@@ -1,7 +1,7 @@
 import streamlit as st # Creación interfaz web
 import networkx as nx # Generación de grafos y algoritmos de rutas
 import pandas as pd # Generación de tablas
-import plotly.graph_objects as go # Generación de grafos
+import plotly.graph_objects as go # Dibujado de grafos
 
  # Generación de títulos y descripción de la aplicación
 st.set_page_config(page_title="Laboratorio Johal - Sink Tree", layout="wide")
