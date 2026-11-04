@@ -89,7 +89,8 @@ for _, fila in editado.iterrows():
 # Añadir nodos aunque todos sus enlaces estén caídos ayuda a informar desconexiones.
 for nodo in ["H", "D", "A", "B", "E", "J", "C", "O", "N"]:
     G.add_node(nodo)
- 
+
+# Funcion de peso para el cálculo de la ruta óptima según el criterio seleccionado.
 if objetivo == "Mínimo de saltos (Johal)":
     peso = lambda u, v, datos: 1
 elif objetivo == "Mínimo retardo":
