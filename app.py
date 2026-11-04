@@ -139,7 +139,8 @@ fig.update_layout(height=450, margin=dict(l=20, r=20, t=20, b=20),
                   xaxis=dict(visible=False), yaxis=dict(visible=False))
 st.plotly_chart(fig, width="stretch")
 
- # Calcular la ruta óptima según el criterio seleccionado y mostrar métricas.
+  # Calcular la ruta óptima según el criterio seleccionado mediante el algoritmo de Dijkstra y mostrar métricas.
+
 ruta = None
 try:
     if nx.has_path(G, "H", "B"):
